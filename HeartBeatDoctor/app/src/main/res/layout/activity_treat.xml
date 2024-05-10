@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="病人最近体征数据图"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="用户年龄"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/patientAge"
+        android:text="null"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="附加信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/patientAdditionalInfomation"
+        android:text="null"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="诊断结果:"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/treatResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:text="建议会诊"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+
+    <TextView
+        android:id="@+id/patientWhether"
+        android:text="病人预约就诊:"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="预约回复:"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/meetTreatResponse"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/sendMeetTreatButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+
+    <ListView
+        android:id="@+id/dataListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
